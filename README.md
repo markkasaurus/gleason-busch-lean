@@ -34,10 +34,6 @@ The verification script checks:
 
 Citation metadata is provided in `CITATION.cff`.
 
-Version DOI: [10.5281/zenodo.19715958](https://doi.org/10.5281/zenodo.19715958)
-
-Concept DOI: [10.5281/zenodo.19715957](https://doi.org/10.5281/zenodo.19715957)
-
 ## License
 
 The repository is released under the Apache License 2.0. See `LICENSE`.

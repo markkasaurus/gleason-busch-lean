@@ -9,9 +9,7 @@ authors:
     given-names: Mark J.
 version: 1.0.0
 date-released: 2026-04-24
-repository-code: "https://github.com/markkasaurus/gleason-via-busch-lean4"
-doi: 10.5281/zenodo.19715958
-url: "https://doi.org/10.5281/zenodo.19715957"
+repository-code: "https://github.com/markkasaurus/gleason-busch-lean"
 license: Apache-2.0
 abstract: >-
   A Lean 4 formalization of Busch's effects formulation of Gleason's theorem.
