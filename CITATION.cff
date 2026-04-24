@@ -10,6 +10,8 @@ authors:
 version: 1.0.0
 date-released: 2026-04-24
 repository-code: "https://github.com/markkasaurus/gleason-busch-lean"
+doi: 10.5281/zenodo.19739805
+url: "https://doi.org/10.5281/zenodo.19739804"
 license: Apache-2.0
 abstract: >-
   A Lean 4 formalization of Busch's effects formulation of Gleason's theorem.
