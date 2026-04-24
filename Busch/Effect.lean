@@ -9,6 +9,8 @@ with:
 - Partial orthogonal sum (when `E + F ≤ I`)
 This file sets up the basic type `Effect H` as a bundled subtype with the required
 properties, together with minimal structure.
+`Busch/EffectPredicate.lean` provides an unbundled compatibility predicate using
+mathlib's `ContinuousLinearMap.IsPositive`.
 Effects are not the same as projections; projections are precisely the
 idempotent effects. Classical frame functions on projections are recovered by
 restricting generalized frame functions to that idempotent subfamily.

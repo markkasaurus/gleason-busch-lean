@@ -1,5 +1,4 @@
 import Classical.Projection
-import Mathlib
 
 noncomputable section
 

@@ -7,7 +7,7 @@ The proof surface consists of:
 - `Classical/`: projection, rank-one, and frame-function support
 - `GleasonBuschStandalone.lean`: package entry point
 
-The Busch dependency closure for the final theorem is:
+The Busch files shipped with the library are:
 
 - `Busch/ClassicalBridge.lean`
 - `Busch/ConvexCombination.lean`
@@ -17,6 +17,7 @@ The Busch dependency closure for the final theorem is:
 - `Busch/DyadicHomogeneity.lean`
 - `Busch/DyadicRational.lean`
 - `Busch/Effect.lean`
+- `Busch/EffectPredicate.lean`
 - `Busch/EffectOrthogonal.lean`
 - `Busch/EffectScalar.lean`
 - `Busch/GenFrameFunction.lean`
@@ -43,3 +44,8 @@ The Busch dependency closure for the final theorem is:
 - `Busch/SegmentContinuity.lean`
 - `Busch/Trace.lean`
 - `Busch/TraceONB.lean`
+
+`Busch/EffectPredicate.lean` is a compatibility bridge to mathlib's
+`ContinuousLinearMap.IsPositive` predicate. It is not needed to state the final
+theorem, but it provides an unbundled effect predicate for downstream users and
+future refactoring.

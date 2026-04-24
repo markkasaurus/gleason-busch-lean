@@ -1,6 +1,5 @@
 import Classical.Projection
 import Classical.RankOneProjection
-import Mathlib
 
 noncomputable section
 

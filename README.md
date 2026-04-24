@@ -51,4 +51,4 @@ The repository is released under the Apache License 2.0. See `LICENSE`.
 - `scripts/verify.sh` — repository-wide verification script used locally and in CI
 
 For more detail, see `docs/THEOREM.md`, `docs/ARCHITECTURE.md`,
-`docs/VERIFICATION.md`, and `docs/AI_DISCLOSURE.md`.
+`docs/VERIFICATION.md`, `docs/AUDIT.md`, and `docs/AI_DISCLOSURE.md`.

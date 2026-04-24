@@ -14,6 +14,7 @@ rank-one and restriction interfaces.
 ## 2. Effect algebra and generalized frame functions
 
 - `Busch/Effect.lean`
+- `Busch/EffectPredicate.lean`
 - `Busch/EffectOrthogonal.lean`
 - `Busch/ProjectionRestriction.lean`
 - `Busch/EffectScalar.lean`
@@ -26,6 +27,9 @@ rank-one and restriction interfaces.
 
 These files define the effect algebra and the generalized frame-function
 axioms, then derive the basic dyadic algebra used later for real homogeneity.
+`Busch/EffectPredicate.lean` connects the bundled `Effect` type to an
+unbundled `IsEffect` predicate using mathlib's
+`ContinuousLinearMap.IsPositive`.
 
 ## 3. Convexity and positive-operator extension
 

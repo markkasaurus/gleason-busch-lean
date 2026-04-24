@@ -14,6 +14,7 @@ lean_lib GleasonBuschStandalone where
     `Classical.RankOneProjection,
     `Classical.FrameFunction,
     `Busch.Effect,
+    `Busch.EffectPredicate,
     `Busch.EffectOrthogonal,
     `Busch.GenFrameFunction,
     `Busch.ProjectionRestriction,

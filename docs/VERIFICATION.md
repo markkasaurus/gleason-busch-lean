@@ -43,6 +43,8 @@ The expected output is that both depend only on:
 - `Classical.choice`
 - `Quot.sound`
 
+For additional independent audit notes, see `docs/AUDIT.md`.
+
 ## Placeholder and custom-declaration scan
 
 ```sh

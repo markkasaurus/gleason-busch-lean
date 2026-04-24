@@ -1,4 +1,6 @@
-import Mathlib
+import Mathlib.Analysis.InnerProductSpace.Projection.Basic
+import Mathlib.Analysis.Normed.Operator.Basic
+import Mathlib.Tactic
 
 noncomputable section
 
@@ -121,7 +123,18 @@ lemma add_inner (P Q : Projection H) (h : orthogonal P Q) :
     have : inner (𝕜 := ℂ) (Q.1 x) y - inner (𝕜 := ℂ) (Q.1 x) (Q.1 y) = 0 := by
       simpa [inner_sub_right] using (Q.inner_err x y)
     exact sub_eq_zero.mp this
-  simp [ContinuousLinearMap.add_apply, hPy, hQy, hPQinner, hQPinner]
+  rw [ContinuousLinearMap.add_apply, ContinuousLinearMap.add_apply]
+  calc
+    inner (𝕜 := ℂ) (P.1 x + Q.1 x) (y - (P.1 y + Q.1 y))
+        = inner (𝕜 := ℂ) (P.1 x) y - inner (𝕜 := ℂ) (P.1 x) (P.1 y)
+          - inner (𝕜 := ℂ) (P.1 x) (Q.1 y)
+          + (inner (𝕜 := ℂ) (Q.1 x) y - inner (𝕜 := ℂ) (Q.1 x) (P.1 y)
+          - inner (𝕜 := ℂ) (Q.1 x) (Q.1 y)) := by
+            simp only [inner_add_left, inner_sub_right, inner_add_right]
+            ring_nf
+    _ = 0 := by
+      rw [hPy, hQy, hPQinner, hQPinner]
+      ring_nf
 
 def add (P Q : Projection H) (h : orthogonal P Q) : Projection H :=
   ⟨P.1 + Q.1, by
@@ -133,6 +146,7 @@ lemma add_selfAdjointOp (P Q : Projection H) (h : orthogonal P Q) :
   intro x y
   have hP := selfAdjointOp (H := H) P x y
   have hQ := selfAdjointOp (H := H) Q x y
-  simp [add, hP, hQ]
+  simp only [add, ContinuousLinearMap.add_apply, inner_add_left, inner_add_right]
+  rw [hP, hQ]
 
 end Projection
