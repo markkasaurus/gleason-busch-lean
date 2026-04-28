@@ -5,6 +5,21 @@ formulation of Gleason's theorem.
 
 ## Main Result
 
+The statement-only entry point is `GleasonBuschStatement.lean`. It imports only
+Mathlib and defines:
+
+```lean
+GleasonBusch.GleasonBuschTheorem
+```
+
+The proof entry point is `GleasonBuschVerification.lean`, whose theorem
+
+```lean
+GleasonBusch.gleason_busch_verified
+```
+
+proves that statement from the formalization in `Busch/`.
+
 For every generalized frame function `μ` on the effects of a finite-dimensional
 complex Hilbert space `H` with `2 ≤ Module.finrank ℂ H`, the formalization
 proves the existence of a self-adjoint trace-one operator `ρ` such that
@@ -47,6 +62,8 @@ The repository is released under the Apache License 2.0. See `LICENSE`.
 - `Busch/` — theorem files for effects, linear extension, Hilbert-Schmidt
   geometry, and the final representation theorem
 - `Classical/` — minimal projection and rank-one support
+- `GleasonBuschStatement.lean` — statement-only entry point using only Mathlib
+- `GleasonBuschVerification.lean` — proof of the statement-only entry point
 - `Verification/` — axiom-check scripts and Lean verification targets
 - `scripts/verify.sh` — repository-wide verification script used locally and in CI
 

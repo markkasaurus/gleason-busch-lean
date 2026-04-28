@@ -48,5 +48,7 @@ lean_lib GleasonBuschStandalone where
     `Busch.SASubspace,
     `Busch.RieszSA,
     `Busch.GleasonUnconditional,
+    `GleasonBuschStatement,
+    `GleasonBuschVerification,
     `GleasonBuschStandalone
   ]

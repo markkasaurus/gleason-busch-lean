@@ -35,6 +35,7 @@ lake env lean Verification/Axioms.lean
 This prints the axiom dependencies of:
 
 - `Busch.gleason_busch_unconditional`
+- `GleasonBusch.gleason_busch_verified`
 - `Busch.tracePairingRiesz_unconditional`
 
 The expected output is that both depend only on:

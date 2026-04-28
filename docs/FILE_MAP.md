@@ -5,7 +5,10 @@ The proof surface consists of:
 - `Busch/`: theorem files for the effect algebra, extension theory, trace
   pairing, Hilbert-Schmidt geometry, and final representation theorem
 - `Classical/`: projection, rank-one, and frame-function support
+- `GleasonBuschStatement.lean`: statement-only entry point using only Mathlib
+- `GleasonBuschVerification.lean`: proof of the statement-only entry point
 - `GleasonBuschStandalone.lean`: package entry point
+- `Verification/comparator.example.json`: comparator configuration template
 
 The Busch files shipped with the library are:
 

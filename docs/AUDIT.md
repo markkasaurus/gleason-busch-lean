@@ -23,5 +23,33 @@ Quot.sound
 The theorem to audit is:
 
 ```text
-Busch.gleason_busch_unconditional
+GleasonBusch.gleason_busch_verified
+```
+
+The statement-only file is:
+
+```text
+GleasonBuschStatement.lean
+```
+
+It imports only Mathlib and defines:
+
+```text
+GleasonBusch.GleasonBuschTheorem
+```
+
+The proof file is:
+
+```text
+GleasonBuschVerification.lean
+```
+
+For comparator use, the trusted challenge should be prepared outside this
+repository from the statement in `GleasonBuschStatement.lean`; this avoids
+placing a `sorry`-based challenge file inside the proof repository itself.
+
+An example comparator configuration is provided at:
+
+```text
+Verification/comparator.example.json
 ```
